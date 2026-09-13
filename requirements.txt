@@ -1,0 +1,4 @@
+# SQLOnboarding Course Requirements
+# 
+# Core requirement: Python 3.8+
+# Note: sqlite3 is included in Python's standard library and does not need installation
