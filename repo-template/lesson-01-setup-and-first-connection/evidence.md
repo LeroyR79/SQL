@@ -1,9 +1,9 @@
 # Lesson 01 Evidence Pro-Forma
 
 ## Commit evidence (minimum 2)
-- Commit 1 hash + message:
-- Commit 2 hash + message:
-- Optional Commit 3 hash + message:
+- Commit 1 hash + message: Commit 1 - Initial commit
+- Commit 2 hash + message: Commit 2 - Started and completed lesson 1
+- Optional Commit 3 hash + message: 
 
 ## Run evidence
 - Command run (example: `python lesson1_connect.py`):
@@ -28,6 +28,6 @@ Opens a database file
 
 ## Quality checklist
 - [x] Script runs without unhandled errors
-- [ ] I included at least 2 lesson commits
+- [x] I included at least 2 lesson commits
 - [x] I included terminal evidence
 - [x] I answered all questions in my own words

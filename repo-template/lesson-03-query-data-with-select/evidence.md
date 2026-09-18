@@ -28,7 +28,9 @@
 
 ## Understanding check (answer in your own words)
 1. What is the job of `SELECT`?
+SELECT read all the values within a table
 2. What type of value does `fetchall()` return?
+fetchall() returns all data within a table
 3. How did your output change when you selected fewer columns?
 
 ## Quality checklist
