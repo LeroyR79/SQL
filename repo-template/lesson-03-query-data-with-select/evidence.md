@@ -18,9 +18,9 @@
 - What actually happened:
 
 ## SQL/Python changes I made
-- Change 1:
-- Change 2:
-- Why these changes were mine (not just starter code):
+- Change 1: Added another column for Terence.
+- Change 2: 
+- Why these changes were mine (not just starter code): These changes were made to change the code and add more poeple to the table.
 
 ## Error and fix
 - Error I hit:

@@ -1,5 +1,3 @@
-"""Lesson 3: Query students with SELECT and print the results."""
-
 import sqlite3
 
 connection = sqlite3.connect("school.db")
@@ -7,7 +5,7 @@ connection = sqlite3.connect("school.db")
 cursor = connection.cursor()
 
 # Run a SELECT query to read columns from the students table.
-cursor.execute("SELECT id, SELECT name FROM students, year_group FROM students")
+cursor.execute("SELECT id, name, year_group FROM students")
 # fetchall() returns a list of all rows from the most recent query.
 rows = cursor.fetchall()
 
