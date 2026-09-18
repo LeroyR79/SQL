@@ -1,13 +1,13 @@
 # Lesson 02 Evidence Pro-Forma
 
 ## Commit evidence (minimum 2)
-- Commit 1 hash + message:
-- Commit 2 hash + message:
-- Optional Commit 3 hash + message:
+- Commit 1 hash + message: Commit 1 - Started lesson 2
+- Commit 2 hash + message: Commit 2 - Lesson 2 - Questions
+- Optional Commit 3 hash + message: Commit 3 - Finished lesson 2
 
 ## Run evidence
-- Command run:
-- Terminal output pasted below:
+- Command run: It ran and created a database for my SQL table
+- Terminal output pasted below: python lesson-02.py
 
 ## SQL/Python changes I made
 - I changed the names plus added another section for the students' test marks.
@@ -26,6 +26,6 @@ To make sure it doesn't override an already existing table.
 
 ## Quality checklist
 - [x] Script runs without unhandled errors
-- [ ] I included at least 2 lesson commits
+- [x] I included at least 2 lesson commits
 - [x] I showed inserts and saved changes
 - [x] I answered all questions in my own words
