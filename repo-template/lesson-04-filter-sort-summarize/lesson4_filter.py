@@ -7,7 +7,7 @@ cursor = connection.cursor()
 # Python value used in a parameterized query below.
 year_group = 10
 cursor.execute(
-    "SELECT name, year_group FROM students WHERE year_group = ? ORDER BY name",
+    "SELECT name, year_group, test_mark, grade FROM students WHERE year_group = ? ORDER BY name",
     (year_group,)
 )
 
