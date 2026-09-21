@@ -10,18 +10,19 @@ CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     year_group INTEGER,
-    test_mark INTEGER
-)
+    test_mark INTEGER,
+    grade TEXT NOT NULL
+    )
 """)
 
 # Clear old rows so this lesson script gives predictable output each run.
 cursor.execute("DELETE FROM students")
 
 # Insert rows using placeholders (?) to safely pass Python values.
-cursor.execute("INSERT INTO students (name, year_group, test_mark) VALUES (?, ?, ?)", ("Adrian", 10, 10))
-cursor.execute("INSERT INTO students (name, year_group, test_mark) VALUES (?, ?, ?)", ("Oscar", 10, 50))
-cursor.execute("INSERT INTO students (name, year_group, test_mark) VALUES (?, ?, ?)", ("Marlon", 10, 100))
-cursor.execute("INSERT INTO students (name, year_group, test_mark) VALUES (?, ?, ?)", ("Terence", 10, 80))
+cursor.execute("INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)", ("Adrian", 10, 10, "N"))
+cursor.execute("INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)", ("Oscar", 10, 50, "C"))
+cursor.execute("INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)", ("Marlon", 10, 100, "A"))
+cursor.execute("INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)", ("Terence", 10, 80, "B"))
 
 # Commit saves all changes made by INSERT/DELETE/CREATE statements.
 connection.commit()
