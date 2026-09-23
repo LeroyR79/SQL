@@ -9,7 +9,9 @@ cursor.execute("""
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
-    year_group INTEGER
+    year_group INTEGER,
+    test_mark INTEGER,
+    grade TEXT
 )
 """)
 
@@ -27,25 +29,25 @@ cursor.execute("DELETE FROM students")
 cursor.execute("DELETE FROM courses")
 
 cursor.execute(
-    "INSERT INTO students (name, year_group) VALUES (?, ?)",
-    ("Ava", 10)
+    "INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)",
+    ("Adrian", 10, 50, "C")
 )
-ava_id = cursor.lastrowid
+Adrian_id = cursor.lastrowid
 
 cursor.execute(
-    "INSERT INTO students (name, year_group) VALUES (?, ?)",
-    ("Leo", 11)
+    "INSERT INTO students (name, year_group, test_mark, grade) VALUES (?, ?, ?, ?)",
+    ("Marlon", 10, 80, "B")
 )
-leo_id = cursor.lastrowid
+Marlon_id = cursor.lastrowid
 
 # Use lastrowid values so each course links to the correct student row.
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
-    ("Science Club", ava_id)
+    ("Coding Club", Marlon_id)
 )
 cursor.execute(
     "INSERT INTO courses (course_name, student_id) VALUES (?, ?)",
-    ("Math Team", leo_id)
+    ("Language Club", Adrian_id)
 )
 
 # JOIN combines student names with their matching course names.
